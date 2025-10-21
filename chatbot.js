@@ -2,7 +2,7 @@
 class ChatBot {
     constructor() {
         // ⚠️ Important: Replace with your n8n webhook URL
-        this.webhookUrl = 'https://aliciaroesch.app.n8n.cloud/webhook-test/chat_webhook';
+        this.webhookUrl = 'https://aliciaroesch.app.n8n.cloud/webhook/chat_webhook';
         
         // Initialize session ID
         this.sessionId = this.getOrCreateSessionId();
@@ -513,7 +513,7 @@ class ChatBot {
                     <div class="chatbot-header">
                         <div class="chatbot-title">
                             <span class="title-icon">🤖</span>
-                            AI Assistant v6
+                            Alicia's AI Assistant
                         </div>
                         <button class="chatbot-close" id="chatbotClose">
                             <i class="fas fa-times"></i>
@@ -740,7 +740,7 @@ class ChatBot {
         if (recentHistory.length === 0) {
             // If no history, show welcome message
             setTimeout(() => {
-                this.addMessage('Hello! I\'m AI Assistant v6. Do you have any questions about Professor Luarn\'s courses or AI topics?', 'ai');
+                this.addMessage('Hello! I\'m Alicia's AI Assistant. Do you have any questions about Professor Luarn\'s courses or AI topics?', 'ai');
             }, 1000);
         }
     }
